@@ -26,6 +26,9 @@ def test_predict(image_array, model):
 
     itemindex = np.where(result==np.max(result))
     prediction = itemindex[1][0]
+    class_names = ['calling', 'clapping', 'cycling', 'dancing', 'drinking', 'eating',
+                   'fighting', 'hugging', 'laughing', 'listening_to_music', 'running',
+                   'sitting', 'sleeping', 'texting', 'using_laptop']
     prediction = class_names[prediction]
     return prediction
 
@@ -33,9 +36,7 @@ def test_predict(image_array, model):
 def main():
     st.title("Image Classification App")
 
-    class_names = ['calling', 'clapping', 'cycling', 'dancing', 'drinking', 'eating',
-                   'fighting', 'hugging', 'laughing', 'listening_to_music', 'running',
-                   'sitting', 'sleeping', 'texting', 'using_laptop']
+    
     
     # Dropdown to select the model
     selected_model = st.selectbox("Select Model", list(models.keys()))
