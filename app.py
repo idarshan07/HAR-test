@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 model_paths = {
     "VGG16": "saved_models/model_2.h5",
     "VGG19": "saved_models/model_4.h5",
-    "ResNet101": "saved_models/model_7.h5"
+    #"ResNet101": "saved_models/model_7.h5"
 }
 
 models = {}
