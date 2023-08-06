@@ -3,11 +3,12 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 # Load the saved models
 model_paths = {
-    "VGG16": "saved_models/model_2.h5",
+    
     "VGG19": "saved_models/model_4.h5",
+    "VGG16": "saved_models/model_2.h5"
     #"ResNet101": "saved_models/model_7.h5"
 }
 
