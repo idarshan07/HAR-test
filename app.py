@@ -19,7 +19,7 @@ for model_name, model_path in model_paths.items():
 # Function to read images as array
 def read_image(fn):
     image = Image.open(fn)
-    return np.asarray(image.resize((120, 120)))
+    return np.asarray(image)
 
 # Function to predict
 def test_predict(image_array, model):
