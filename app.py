@@ -43,6 +43,7 @@ def main():
     selected_model = st.selectbox("Select Model", list(models.keys()))
 
     # Upload image through Streamlit UI
+    st.subheader("Please upload an image of any of these human activities: 'calling', 'clapping', 'cycling', 'dancing', 'drinking', 'eating','fighting', 'hugging', 'laughing', 'listening_to_music', 'running','sitting', 'sleeping', 'texting', 'using_laptop'")
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
     if uploaded_image is not None:
